@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import Home from './home.js';
 
 const myStyle = {
   fontSize : 100,
@@ -31,6 +32,6 @@ class Main extends React.Component{
   }
 }
 
-ReactDOM.render(<Main title="Google" link="http://www.google.com"/>,document.getElementById('root'));
+ReactDOM.render(<Home />,document.getElementById('root'));
 
 registerServiceWorker();
